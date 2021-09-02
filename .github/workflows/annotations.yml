@@ -16,5 +16,5 @@ jobs:
       #     echo '::notice::a notice'
       - uses: actions/checkout@v2
       - uses: ./.github/actions/annotations
-        # with:
-        #   ghToken: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          ghToken: ${{ secrets.GITHUB_TOKEN }}
