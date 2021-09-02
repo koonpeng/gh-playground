@@ -19,5 +19,5 @@ jobs:
       #     echo '::debug::a debug message'
       #     echo '::warning::a warning message'
       #     echo '::error::an error message'
-      - name: print-annotations
-        uses: ./.github/actions/annotations
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/annotations
