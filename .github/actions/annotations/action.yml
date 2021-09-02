@@ -13,4 +13,4 @@ runs:
       shell: bash
       working-directory: ./.github/actions/annotations
       env:
-        GITHUB_TOKEN: ${{ inputs.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ inputs.ghToken }}
