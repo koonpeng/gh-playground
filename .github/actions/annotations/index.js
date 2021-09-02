@@ -1,4 +1,4 @@
-const core = require('core');
+const core = require('@actions/core');
 
 core.error('an error message');
 core.warning('a warning message');
