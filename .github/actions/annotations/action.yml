@@ -1,5 +1,9 @@
 name: Annotations
 description: Test printing annotations
+inputs:
+  ghToken:
+    description: github token for octokit
+    required: true
 runs:
   using: composite
   steps:
