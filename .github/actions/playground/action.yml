@@ -1,5 +1,5 @@
-name: Annotations
-description: Test printing annotations
+name: Playground
+description: Playground
 inputs:
   ghToken:
     description: github token for octokit
@@ -11,6 +11,6 @@ runs:
         npm ci
         node index.js
       shell: bash
-      working-directory: ./.github/actions/annotations
+      working-directory: ./.github/actions/playground
       env:
         GITHUB_TOKEN: ${{ inputs.ghToken }}

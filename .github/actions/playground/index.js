@@ -9,6 +9,5 @@ const { execSync } = require('child_process');
 
 // const ghToken = core.getInput('ghToken', { required: true });
 const ghToken = process.env.GITHUB_TOKEN;
-console.log('token', ghToken);
 const octo = github.getOctokit(ghToken);
 octo.rest.checks.create({ name: 'test check', head_sha: github.context.sha });
