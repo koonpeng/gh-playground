@@ -6,5 +6,7 @@ const github = require('@actions/github');
 // core.info('an info message');
 // core.notice('a notice message');
 
-const octo = github.getOctokit(core.getInput('ghToken'));
+const ghToken = core.getInput('ghToken');
+console.log(ghToken);
+const octo = github.getOctokit(ghToken);
 octo.rest.checks.create({ name: 'test check', head_sha: github.context.sha });
