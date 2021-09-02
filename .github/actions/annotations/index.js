@@ -6,5 +6,5 @@ core.warning('a warning message');
 core.info('an info message');
 core.notice('a notice message');
 
-const octo = github.getOctokit();
+const octo = github.getOctokit(github.context.token);
 octo.rest.checks.create({ name: 'test check', head_sha: github.context.sha });
