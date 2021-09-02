@@ -12,5 +12,5 @@ runs:
         node index.js
       shell: bash
       working-directory: ./.github/actions/annotations
-      env:
-        ghToken: ${{ secrets.GITHUB_TOKEN }}
+      # env:
+      #   ghToken: ${{ secrets.GITHUB_TOKEN }}
