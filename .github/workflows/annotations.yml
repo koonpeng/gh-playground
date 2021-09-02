@@ -18,3 +18,4 @@ jobs:
       - uses: ./.github/actions/annotations
         with:
           ghToken: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo ${{ secrets.GITHUBTOKEN }}
