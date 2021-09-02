@@ -1,5 +1,9 @@
 name: Annotations
 description: Test printing annotations
 runs:
-  using: node12
-  main: index.js
+  using: composite
+  steps:
+    - run: |
+        npm ci
+        node .github/actions/annotations/index.js
+      shell: bash
