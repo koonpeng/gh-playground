@@ -8,9 +8,12 @@ runs:
   using: composite
   steps:
     - run: |
-        npm ci
         node index.js
       shell: bash
-      working-directory: ./.github/actions/playground
-      env:
-        GITHUB_TOKEN: ${{ inputs.ghToken }}
+    # - run: |
+    #     npm ci
+    #     node index.js
+    #   shell: bash
+    #   working-directory: ./.github/actions/playground
+    #   env:
+    #     GITHUB_TOKEN: ${{ inputs.ghToken }}
