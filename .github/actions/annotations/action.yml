@@ -5,5 +5,6 @@ runs:
   steps:
     - run: |
         npm ci
-        node .github/actions/annotations/index.js
+        node index.js
       shell: bash
+      working-directory: ./.github/actions/annotations
