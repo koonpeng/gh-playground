@@ -1,0 +1,19 @@
+name: Playground
+description: Playground
+inputs:
+  ghToken:
+    description: github token for octokit
+    required: true
+runs:
+  using: composite
+  steps:
+    - run: |
+        node index.js
+      shell: bash
+    # - run: |
+    #     npm ci
+    #     node index.js
+    #   shell: bash
+    #   working-directory: ./.github/actions/playground
+    #   env:
+    #     GITHUB_TOKEN: ${{ inputs.ghToken }}

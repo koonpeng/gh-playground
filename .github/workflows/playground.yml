@@ -1,11 +1,12 @@
 name: Playground
 on:
+  pull_request:
   push:
     branches:
       - main
 jobs:
   annotations:
-    name: annotations
+    name: playground
     runs-on: ubuntu-latest
     steps:
       # - run: |
@@ -15,7 +16,6 @@ jobs:
       #     echo '::error::an error message'
       #     echo '::notice::a notice'
       - uses: actions/checkout@v2
-      - uses: ./.github/actions/annotations
+      - uses: ./.github/actions/playground
         with:
           ghToken: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo ${{ secrets.GITHUBTOKEN }}
